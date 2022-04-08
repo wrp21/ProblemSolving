@@ -68,11 +68,12 @@ public class Problem8 {
                     (int)(extra * percentArray[percentArray.length-1]));
         }
 
+
         System.out.println();
-        System.out.printf("[세율에 의한 세금]:        \t%d \n", tax1);
+        System.out.printf("[세율에 의한 세금]: \t\t\t%d \n", tax1);
         if(income > 12000000) {
             tax2 =  (income * percentArray[index+1]) - deductionArray[index];
-            System.out.printf("[누진공제 계산에 의한 세금]: %10.0f \n", tax2);
+            System.out.printf("[누진공제 계산에 의한 세금]:  \t%.0f \n", tax2);
         } else {
             System.out.printf("[누진공제 계산에 의한 세금]: \t -\n ");
         }

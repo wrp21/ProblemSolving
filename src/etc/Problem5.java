@@ -16,7 +16,6 @@ import java.util.Scanner;
 
 public class Problem5 {
 
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -28,15 +27,11 @@ public class Problem5 {
 
         char[] weeks = new char[] {'일', '월', '화', '수', '목', '금', '토'};
 
-
         LocalDate calender = LocalDate.of(year, month, 1);
-        int[] displayDays = new int[7];
-
 
         System.out.println();
         System.out.println();
-        System.out.println(String.format("[%d년 %02d월]", year, month));
-
+        System.out.printf("[%d년 %02d월]%n", year, month);
 
         for(char week: weeks) {
             System.out.printf("%c\t", week);
@@ -45,26 +40,17 @@ public class Problem5 {
 
         for(int i = 0; i < calender.lengthOfMonth(); i++) {
             LocalDate day = calender.plusDays(i);
-
-//            System.out.printf("%02d\t", day.getDayOfMonth());
-
             if(day.getDayOfMonth() == 1) {
                 for(int j = 0; j < day.getDayOfWeek().getValue() ; j++) {
-                    System.out.printf(" \t");
+                    System.out.print(" \t");
                 }
                 System.out.printf("%02d\t", day.getDayOfMonth());
-
             } else {
                 System.out.printf("%02d\t", day.getDayOfMonth());
                 if(day.getDayOfWeek().getValue() == 6) {
                     System.out.println();
                 }
             }
-
-
         }
-
-
-
     }
 }
