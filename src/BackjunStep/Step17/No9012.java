@@ -33,6 +33,5 @@ public class No9012 {
         br.close();
         bw.flush();
         bw.close();
-
     }
 }

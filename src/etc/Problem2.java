@@ -1,4 +1,5 @@
-package etc;/*
+package etc;
+/*
     과제 2
     금액이 입력되었을 때 캐시백 계산하여 출력
 

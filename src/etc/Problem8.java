@@ -68,7 +68,6 @@ public class Problem8 {
                     (int)(extra * percentArray[percentArray.length-1]));
         }
 
-
         System.out.println();
         System.out.printf("[세율에 의한 세금]: \t\t\t%d \n", tax1);
         if(income > 12000000) {
