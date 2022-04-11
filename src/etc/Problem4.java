@@ -36,7 +36,7 @@ public class Problem4 {
         String randomNumber = "";
 
         for(int i = 0; i < 6; i++) {
-            randomNumber += String.valueOf(numberGenerator.nextInt(9));
+            randomNumber += String.valueOf(numberGenerator.nextInt(10));
         }
 
         // 주민번호 뒷자리 : 설별(m:3, f:4) + Random.nextInt를 통하여 생성한 임의의수
