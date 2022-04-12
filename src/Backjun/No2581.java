@@ -32,7 +32,6 @@ public class No2581 {
                     min = i;
                 }
             }
-
         }
 
         if(min != N + 1) {
