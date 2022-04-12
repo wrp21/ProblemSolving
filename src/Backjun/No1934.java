@@ -15,6 +15,8 @@ public class No1934 {
             }
         }
 
+        result.add(num);
+
         return result;
     }
 
